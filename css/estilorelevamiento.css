@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Suez+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+SC&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html{
+	height: 100%;
+	width: 99%;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+body{
+	font-family: "Suez One", serif;
+	min-height: 100%;
+	background-image: url(../img/fondopromo-05.jpg); 
+
+}
+
+.contenedor{
+	display: grid;
+	gap: 10px;
+	grid-template: 
+	"header 	header 		header" 	80px 
+	"texto 		texto 		imagen" 	520px
+	"texto		texto		imagen"		70px
+	"footer 	footer 		footer" 	55px /
+	 auto 		40% 		18%;
+}
+
+.header{
+	grid-area: header;
+	background-color: grey;
+}
